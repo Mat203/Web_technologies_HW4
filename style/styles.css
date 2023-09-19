@@ -192,7 +192,7 @@ a {
 }
 
 .text-container {
-    width: 40%;
+    width: 30%;
     display: flex;
 }
 
@@ -330,6 +330,18 @@ a {
         display: none;
     }
 
+    .uptodate-backfooter a {
+        display: inline-flex;
+        color: var(--text-button-white, #FFF);
+        text-align: center;
+        font-family: Abel;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: -0.36px;
+    }
+
     #mobile-logo {
         display: block;
     }
@@ -350,15 +362,15 @@ a {
     #illustration {
         width: 222px;
         height: 218px;
-        top: 10%;
+        top: 12%;
     }
 
     #imagegrow {
         width: 193px;
         height: 163px;
         flex-shrink: 0;
-        top: 0%;
-        left: 20%;
+        top: 1%;
+        left: 5%;
     }
 
     #imagecoo {
@@ -366,11 +378,13 @@ a {
         height: 129px;
         flex-shrink: 0;
         left: 57%;
+        top: 1%;
     }
 
     .contact-us {
-        padding-top: 65%;
+        padding-top: 75%;
     }
+
 
     .text-container {
         width: 75%;
@@ -380,8 +394,18 @@ a {
         height: 35%;
     }
 
+    .contact-us h2 {
+        color: var(--text-headlines-white, #FFF);
+        text-align: center;
+        font-family: Abel;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 40px;
+    }
+
     .backfooter {
-        height: 50%;
+        height: 55%;
         flex-direction: column;
     }
 
@@ -393,6 +417,7 @@ a {
     .lists {
         width: 100%;
         order: 3;
+        gap: 10%;
     }
 
     .pages-backfooter {
@@ -412,5 +437,11 @@ a {
     .arrows-mobile {
         display: inline-block;
         order: 5;
+    }
+}
+
+@media (max-width: 500px) {
+    .contact-us {
+        padding-top: 115%;
     }
 }
