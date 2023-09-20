@@ -2,13 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Aleo:wght@400;700&display=swap');
 
 body {
-    height: 3576px;
+    height: 3376px;
     margin: 0;
     padding: 0;
 }
 
 main {
     height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 header {
@@ -27,6 +31,10 @@ header {
     align-items: flex-end;
     gap: 4.396px;
     flex-shrink: 0;
+}
+
+#mobile-logo {
+    display: none;
 }
 
 ul,
@@ -54,7 +62,7 @@ ol {
     color: var(--text-button-oxford-blue, #000D40);
     font-variant-numeric: lining-nums tabular-nums;
     font-family: Abel;
-    font-size: 16px;
+    font-size: 1.0000em;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
@@ -82,7 +90,7 @@ a {
 #language-button a {
     color: var(--text-button-blue, #129AFE);
     font-family: Abel;
-    font-size: 16px;
+    font-size: 1.0000em;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
@@ -101,7 +109,7 @@ a {
     color: var(--text-button-blue, #129AFE);
     text-align: center;
     font-family: Abel;
-    font-size: 18px;
+    font-size: 1.125em;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
@@ -122,6 +130,183 @@ a {
 
 .dropdown-nav:hover .dropdown-content {
     display: block;
+}
+
+.welcome-message h2 {
+    color: var(--text-headlines-oxford-blue, #000D40);
+    text-align: center;
+    font-family: Abel;
+    font-size: 3.5em;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.welcome-message p {
+    color: var(--text-body-oxford-blue, #000D40);
+    text-align: center;
+    font-family: Abel;
+    font-size: 1.5em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.25em;
+}
+
+.text-container-main {
+    border-radius: 40px;
+    border: 1px solid var(--stroke-blue, #129AFE);
+    display: flex;
+    justify-content: flex-end;
+    width: 37em;
+    margin-top: 3%;
+}
+
+.text-container-main a {
+    padding: 15.5px 28px;
+    border-radius: 100px;
+    background: var(--fill-button-blue, #129AFE);
+    color: var(--text-button-white, #FFF);
+    font-family: Abel;
+    font-size: 1.125em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.36px;
+
+}
+
+.text-container-main input {
+    background-color: transparent;
+    border-color: transparent;
+    margin-left: 0%;
+    width: 77%;
+}
+
+.dropdown-menu {
+    position: relative;
+    display: inline-block;
+    text-align: left;
+    z-index: 1;
+    margin-bottom: 5%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    border-radius: 0.5vw;
+    border: 0.1vw solid #E9EEF2;
+    background: white;
+    width: 37vw;
+    margin-top: 0.25vw;
+    font-family: Arial;
+}
+
+.dropdown-content a {
+    padding: 3vh 2.5vw;
+    display: block;
+    text-decoration: none;
+    color: #333;
+}
+
+.dropdown-menu:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown input:focus {
+    outline: none;
+}
+
+#overlay-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 3vw;
+    cursor: pointer;
+    border-radius: 100px;
+    background: #129AFE;
+    padding: 17px 28px;
+    margin-top: 2vw;
+    font-size: 1em;
+    font-family: Arial;
+    color: white;
+}
+
+.cards {
+    width: 90%;
+    height: 42vw;
+    margin-top: 2.5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 5vh;
+}
+
+.item {
+    width: 30%;
+    height: 20vw;
+    font-family: Abel;
+    background-color: #FAFBFC;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: stretch;
+    flex-shrink: 0;
+    padding: 2%;
+}
+
+.emojiclass {
+    margin-top: 3%;
+}
+
+.emojiclass {
+    color: var(--text-headlines-oxford-blue, #000D40);
+    text-align: center;
+    font-family: Abel;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2em;
+}
+
+.questions {
+    height: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.questions p {
+    color: var(--text-body-oxford-blue, #000D40);
+    font-family: Abel;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.questionpoint {
+    height: 5vw;
+    border-bottom: solid 0.25vh #E9EEF2;
+    text-align: left;
+    margin: 0 2vw;
+    color: var(--text-body-oxford-blue, #000D40);
+    font-family: Abel;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+#firstquestion {
+    height: 10vw;
+}
+
+
+.questionpoint {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
 }
 
 .footer {
@@ -185,7 +370,7 @@ a {
     color: var(--text-headlines-white, #FFF);
     text-align: center;
     font-family: Abel;
-    font-size: 48px;
+    font-size: 3em;
     font-style: normal;
     font-weight: 400;
     line-height: 64px;
@@ -205,7 +390,7 @@ a {
     color: var(--text-button-white, #FFF);
     text-align: center;
     font-family: Abel;
-    font-size: 18px;
+    font-size: 1.125em;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
@@ -235,7 +420,7 @@ a {
     height: 100%;
     color: var(--text-headlines-white, #FFF);
     font-family: Aleo;
-    font-size: 16px;
+    font-size: 1em;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
@@ -262,7 +447,7 @@ a {
 .backfooter h2 {
     color: var(--text-headlines-white, #FFF);
     font-family: Aleo;
-    font-size: 24px;
+    font-size: 1.5em;
     font-style: normal;
     font-weight: 400;
     line-height: 32px;
@@ -271,7 +456,7 @@ a {
 .backfooter li {
     color: var(--text-headlines-white, #FFF);
     font-family: Aleo;
-    font-size: 16px;
+    font-size: 1em;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
@@ -291,7 +476,7 @@ a {
     border: transparent;
     color: var(--text-body-kashmir-blue, #5C6485);
     font-family: Abel;
-    font-size: 14px;
+    font-size: 1em;
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
@@ -326,8 +511,21 @@ a {
 }
 
 @media (max-width: 768px) {
+
+    body {
+        height: 3900px;
+    }
+
     #pc-logo {
         display: none;
+    }
+
+    header {
+        padding: 5% 2% 0 2%;
+    }
+
+    .logo {
+        justify-content: left;
     }
 
     .uptodate-backfooter a {
@@ -344,6 +542,7 @@ a {
 
     #mobile-logo {
         display: block;
+        margin-left: 0;
     }
 
     .dropdown-nav {
@@ -362,15 +561,20 @@ a {
     #illustration {
         width: 222px;
         height: 218px;
-        top: 12%;
+        top: 15%;
     }
 
     #imagegrow {
         width: 193px;
         height: 163px;
         flex-shrink: 0;
-        top: 1%;
+        top: 5%;
         left: 5%;
+    }
+
+
+    .main {
+        height: 65%;
     }
 
     #imagecoo {
@@ -378,7 +582,7 @@ a {
         height: 129px;
         flex-shrink: 0;
         left: 57%;
-        top: 1%;
+        top: 5%;
     }
 
     .contact-us {
@@ -388,6 +592,10 @@ a {
 
     .text-container {
         width: 75%;
+    }
+
+    .text-container-main {
+        width: 20em;
     }
 
     .footer {
@@ -420,6 +628,28 @@ a {
         gap: 10%;
     }
 
+    .questions {
+        margin-top: 23vw;
+        width: 85%;
+        height: auto;
+    }
+
+    .questionpoint {
+        height: 10vh;
+    }
+
+    #firstquestion {
+        height: 45vw;
+    }
+
+    #bordered {
+        padding: 2.5vw 2vw;
+    }
+
+    #small-logo {
+        margin-right: auto;
+    }
+
     .pages-backfooter {
         width: 100%;
         order: 4;
@@ -438,10 +668,64 @@ a {
         display: inline-block;
         order: 5;
     }
+
+    input {
+        width: 75%;
+        padding: 1.9vh 2.7vw;
+    }
+
+    .dropdown-menu {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    .dropdown-content {
+        margin-left: 5vw;
+        width: 65vw;
+    }
+
+    .cards {
+        flex-direction: row;
+        gap: 3vh;
+    }
+
+    .item {
+        width: 90%;
+        height: 175px;
+    }
+
+    #emoji {
+        margin-top: 310%;
+    }
+
+    .q {
+        width: 100%;
+        margin-bottom: 10vh;
+    }
+
 }
 
 @media (max-width: 500px) {
     .contact-us {
-        padding-top: 115%;
+        padding-top: 125%;
+    }
+
+    .emojiclass {
+        margin-top: 5%;
+    }
+
+    .text-container-footer a {
+        font-size: 0.75em;
+    }
+
+    #notify-me-button {
+        color: var(--text-button-blue, #129AFE);
+        text-align: center;
+        font-family: Abel;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: -0.36px;
     }
 }
